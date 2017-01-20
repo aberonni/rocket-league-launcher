@@ -1,0 +1,3 @@
+node_modules/
+settings/*
+!settings/Dual Monitor.ini
