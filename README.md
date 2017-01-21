@@ -12,7 +12,7 @@ A simple application that allows users to change settings presets before launchi
 
 The first time you will have no available settings to run. You will need to backup your current settings, then you can edit the original settings file add other backups.
 
-If you wish to use the Rocket League icon for the exe, you may download the following icon here.
+If you wish to use the Rocket League icon for the exe, you may download the following icon [here](Rocket League.ico).
 
 ![Rocket Leage icon](Rocket League.ico)
 
