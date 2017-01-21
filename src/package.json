@@ -4,11 +4,15 @@
   "description": "A simple application that allows users to change settings presets before launching Rocket League.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/enclose.cmd -o \"../Rocket League.exe\" index.js"
   },
   "author": "Domenico Gemoli",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^2.0.0"
+  },
+  "devDependencies": {
+    "enclose": "^2.2.0"
   }
 }
