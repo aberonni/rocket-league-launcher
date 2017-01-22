@@ -1,7 +1,20 @@
 language: node_js
 node_js:
-  - "node"
-install: 
-  - cd src
-  - npm install
+- node
+install:
+- cd src
+- npm install
 script: npm test
+before_deploy: 
+- npm run build
+- cd ..
+deploy:
+  provider: releases
+  api_key:
+    secure: Jivja3VfmAuy0tRJavsH2FTjRbIfrQGmhmLzQeovqoty5Efppd1mJApFcXkuVZroRjtInuzv0NHeZsIhn+WbuwX4QfS+iMAC1I3FG23DQuMWlSB/UDtvxkhpZcqsLuD+QB9Ul4p4Ys+k7am7jeoepYDLPeK6/YWALt6wy6GdHgfcjKpQqhJeUkNLN5ezkDnRPe+/R5XtQTJv6bObxcEpaCLAZMN+UTtl5VtXqQ5GGjfzdrnl+g9V6wesbzeDN0EPl3zbMTWQiOyllSqHo29TH88cIDNnU/fZg4j4ygk19hoICqP0OlW8cf0mXr/heuyZdy4YSqu0dp5ByH2E/4ZCU+mZ7Riczz1kh+4VVMXr5hDlNND5ApaEk7/ChYesdhRkOYaMnR9Qu0PWLhGHaAPgTmVkfWtya7nKvmFCG/MnlRgySOnXbvYHu78AZsdF9zLYSJbthG354F5Pkef0h/lZpEdb9CgwseDiO4Q6tWdr/gZhdzx8ndT4ZE/5OXrhtxyEawRAS7IEoMewVZW85GGAvQt7EahmTeELVGxHXgmQqSbprei3qv6BCK0sx5+N6dRC3Ho/iQhdDMKjJEVzH8T/Wn8LqGlXyd/QEPCx8Bjhe79pgn/X38rFpuxbMPwqkw2/fG0hbu4cwL5AUpdiORbCQ7Hg3p7n/XEsOb5pjBXGUEQ=
+  file: Rocket League.exe
+  skip_cleanup: true
+  overwrite: true
+  on:
+    branch: travis
+    repo: aberonni/rocket-league-launcher
