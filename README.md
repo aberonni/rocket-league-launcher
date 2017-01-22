@@ -6,7 +6,7 @@ A simple application that allows users to change settings presets before launchi
 
 ### How to use
 
-- [Download the exe](Rocket League.exe)
+- Download the latest exe from the [releases page](https://github.com/aberonni/rocket-league-launcher/releases)
 - Copy into any folder
 - Run
 
