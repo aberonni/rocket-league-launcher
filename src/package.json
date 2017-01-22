@@ -4,7 +4,7 @@
   "description": "A simple application that allows users to change settings presets before launching Rocket League.",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/eslint.cmd index.js",
+    "test": "node_modules/.bin/eslint index.js",
     "build": "node_modules/.bin/enclose.cmd -o \"../Rocket League.exe\" index.js"
   },
   "author": "Domenico Gemoli",
