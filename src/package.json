@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/eslint index.js",
-    "build": "node_modules/.bin/enclose.cmd -o \"../Rocket League.exe\" index.js"
+    "build": "node_modules/.bin/enclose -o \"../Rocket League.exe\" index.js"
   },
   "author": "Domenico Gemoli",
   "license": "ISC",
